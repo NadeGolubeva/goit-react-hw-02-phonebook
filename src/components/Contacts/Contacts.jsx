@@ -16,6 +16,10 @@ export const ContactsDatas = ({ contactsInfo, onDelete}) => {
 }
 
 ContactsDatas.propTypes = {
-    contactsInfo: PropTypes.array.isRequired, 
+    contactsInfo: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        number: PropTypes.number.isRequired
+    }).isRequired,
     onDelete: PropTypes.func.isRequired,
 }
