@@ -12,6 +12,6 @@ border-radius: 5px;
 `;
 
 export const Input = styled.input`
-margin-left: 15px;
+margin-left: 16px;
 font-size: 18px;
 `;
