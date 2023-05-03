@@ -70,11 +70,12 @@ export class App extends Component {
           
         />
         <br />
+            <h2>Contacts</h2>
         <FindContact
           onChangeFilter={this.onChangeInput}
         filter={this.state.filter}
         /> 
-        <h2>Contacts</h2>
+    
         <ContactsDatas contactsInfo={this.filter()} onDelete={this.onDelete} />
       
       </div>

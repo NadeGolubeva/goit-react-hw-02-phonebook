@@ -1,21 +1,23 @@
 import PropTypes from 'prop-types';
+import { Label, Input } from './FindContact.styled';
 // import { Component } from 'react';
 
 export const FindContact = ({filter, onChangeFilter }) => {
     return (
         <>
-            <label>
-                Find contact by name
-                <br />
-                <input
+            <Label>
+                <p>
+                     Find contact by name
+                </p>
+                <Input
                     onChange={onChangeFilter}
                     type="text"
                     name="filter"
                     value={filter}
                     
                 >
-                </input>
-            </label>
+                </Input>
+            </Label>
         </>
     )
 }
