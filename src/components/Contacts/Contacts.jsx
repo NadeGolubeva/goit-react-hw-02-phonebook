@@ -9,10 +9,8 @@ export const ContactsDatas = ({ contactsInfo, onDelete}) => {
        <Names>{contact.name}: {contact.number}  <Btn type="button"
            onClick={() => {
                onDelete(contact.id)}}>Delete</Btn> </Names>
-
     </li>)
-     }  
-     )}
+     })}
  </ul>
     )
 }
