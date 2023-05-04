@@ -34,6 +34,7 @@ export class FormContact extends Component {
               pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
               title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
               value={this.state.name}
+              required
             />
           </Label>{' '}
           <br />
@@ -46,6 +47,7 @@ export class FormContact extends Component {
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
               onChange={this.onChangeInput}
               value={this.state.number}
+              required
             />
           </Label>
           <br />
